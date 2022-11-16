@@ -1,10 +1,10 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.10)
 cmake_policy(SET CMP0048 NEW)
 cmake_policy(SET CMP0053 OLD)
 cmake_policy(SET CMP0054 OLD)
 PROJECT (SZIP LANGUAGES C VERSION 2.1)
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/OCMS-pre.cmake)
+include(${CMAKE_CURRENT_SOURCE_DIR}/CMLIBS-pre.cmake)
 
 #-----------------------------------------------------------------------------
 # Basic SZIP stuff here
@@ -370,5 +370,5 @@ IF (NOT SZIP_EXTERNALLY_CONFIGURED)
 ENDIF (NOT SZIP_EXTERNALLY_CONFIGURED)
 
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/OCMS-post.cmake)
+include(${CMAKE_CURRENT_SOURCE_DIR}/CMLIBS-post.cmake)
 
